@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   font-family: 'Open Sans', 'helvetica', arial, sans-serif
   font-weight: 300;
@@ -9,8 +16,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
   color: #333;
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .container {
@@ -52,12 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
   background-color: #333;
   text-align: center;
-}
-
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .main-nav ul li {
@@ -106,13 +113,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
-.whatido__skill-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .whatido__skill {
+  text-align: center;
   float: left;
   padding-top: 100px;
   width: 33.3%;
@@ -137,4 +139,37 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
+
+.education-experience__list li {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.education-experience__list .education-experience__content {
+  line-height: 1.2;
+  font-weight: 300;
+  overflow: hidden;
+}
+.education-experience__list img {
+  margin-right: 30px;
+  margin-left: 50px;
+  width: 180px;
+  float: left;
+}
+
+.photos__list {
+  overflow: hidden;
+}
+
+.photos__list li {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+
+.photos__list li img {
+  width: 100%;
+}
+
+
 
